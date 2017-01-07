@@ -17,7 +17,9 @@ Setup a  control repo as described in the  setup document
 * R10k quickstart https://github.com/puppetlabs/r10k/blob/master/doc/dynamic-environments/quickstart.mkd
 
 Modules defined in the Puppetfile can be installed using:
-`r10k puppetfile install -v`
+```
+r10k puppetfile install -v
+```
 
 ## Link to puppet locations
 ```
@@ -25,7 +27,9 @@ sudo ln -s $REPO/hieradata/ /var/lib/hiera/
 ```
 
 ### Apply puppet
-`sudo puppet apply --modulepath="./modules:site" ./site.pp § --debug`
+```
+sudo puppet apply --modulepath="./modules:site" ./site.pp --debug
+````
 
 
 ### References
