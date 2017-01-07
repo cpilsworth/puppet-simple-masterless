@@ -1,0 +1,8 @@
+---
+:backends:
+  - yaml
+:yaml:
+  :datadir: /home/ec2-user/control/hieradata
+:hierarchy:
+  - common
+  - "node/%{::fqdn}"
